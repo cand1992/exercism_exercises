@@ -7,14 +7,7 @@ To get started with TDD, see the `README.md` file in your
 =end
 
 class TwoFer
-	def self.two_fer(name = nil)
-		if name == nil
-			name = "you"
-			"One for you, one for me."
-		elsif name == "Alice"
-			"One for #{name}, one for me."
-		elsif name == "Bob"
-			"One for #{name}, one for me."
-		end
+	def self.two_fer(name = "you")
+		"One for #{name}, one for me."
 	end
 end
